@@ -1,0 +1,41 @@
+{
+    "version": "1.0",
+    "site": "",
+    "business": {
+        "name": "Pneucar Centro Automotivo",
+        "type": "AutoRepair",
+        "address": "Rua São José, 865 - São Cristóvão, São José dos Pinhais - PR, 83040-240",
+        "areaServed": [
+            "Curitiba e regiao metropolitana"
+        ]
+    },
+    "actions": [
+        {
+            "id": "contact-whatsapp",
+            "name": "Falar pelo WhatsApp",
+            "description": "Inicia uma conversa no WhatsApp com a oficina para pedir orientação, orçamento ou agendamento.",
+            "method": "link",
+            "target": "https://wa.me/554135569401?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Pneucar%20Centro%20Automotivo%20e%20gostaria%20de%20agendar%20um%20atendimento.",
+            "parameters": {
+                "optional": [
+                    "vehicle_brand",
+                    "vehicle_model",
+                    "vehicle_year",
+                    "symptom"
+                ]
+            }
+        },
+        {
+            "id": "open-route",
+            "name": "Abrir rota no mapa",
+            "description": "Abre a localização da oficina no Google Maps para conferir endereço e rota.",
+            "method": "link",
+            "target": "https://maps.google.com/?cid=6321324084012826902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "parameters": {
+                "optional": [
+                    "origin"
+                ]
+            }
+        }
+    ]
+}
